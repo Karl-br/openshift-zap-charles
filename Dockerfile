@@ -15,8 +15,8 @@ RUN yum install -y redhat-rpm-config \
     java-1.8.0-openjdk-devel nss_wrapper git && \
     yum clean all
 
-RUN pip install --upgrade pip
 RUN pip install typing
+RUN pip install --upgrade pip
 RUN pip install zapcli
 
 # Install latest dev version of the python API
