@@ -39,7 +39,7 @@ ENV HOME /var/lib/jenkins
 ENV ZAP_PORT 8080
 
 COPY policies /var/lib/jenkins/.ZAP/policies/
-COPY .xinitrc /var/lib/jenkins/
+#COPY .xinitrc /var/lib/jenkins/
 
 WORKDIR /zap
 # Download and expand the latest stable release 
