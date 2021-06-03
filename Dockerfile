@@ -15,11 +15,12 @@ RUN yum install -y redhat-rpm-config \
     java-1.8.0-openjdk-devel nss_wrapper git && \
     yum clean all
 
-RUN pip install typing
-RUN pip install zapcli
+RUN pip3 install --upgrade pip
+RUN pip3 install typing
+RUN pip3 install zapcli
 
 # Install latest dev version of the python API
-RUN pip install python-owasp-zap-v2.4
+RUN pip3 install python-owasp-zap-v2.4
 
 RUN mkdir -p /zap/wrk
 ADD zap /zap/
